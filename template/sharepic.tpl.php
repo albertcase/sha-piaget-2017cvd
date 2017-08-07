@@ -44,15 +44,6 @@
         </div>
 
     </div>
-    <?php
-        if($list['isme'] == 1) {
-    ?> 
-    <p>ziji</p>
-    <?php
-        } else {
-    ?>
-    <p>BUSHI ZIJI</p>
-    <?php } ?>
     
 <!-- 横屏代码 -->
 <div id="orientLayer" class="mod-orient-layer">
@@ -66,6 +57,7 @@
 <script type="text/javascript">
 	// 分享默认设置
 	__base.baseInit();
+    __base.sectionChange("works");
 </script>
 
 
