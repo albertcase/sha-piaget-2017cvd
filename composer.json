@@ -1,0 +1,12 @@
+{
+    "autoload": {
+    	"psr-4": {
+    		"": "bundle",
+    		"Core\\": "core",
+    		"Lib\\": "lib"
+    	}
+    },
+    "require": {
+    	"stil/gd-text": "^1.0"
+    }
+}
