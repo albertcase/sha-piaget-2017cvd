@@ -39,7 +39,7 @@
         <div class="foot">
             <span class="btn">
                 <a href="/" class="friend-btn"></a>
-                <img src="" sourcesrc="/build/dist/img/friend-btn.png" width="100%" />
+                <img src="/build/dist/img/friend-btn.png" width="100%" />
             </span>
         </div>
 
