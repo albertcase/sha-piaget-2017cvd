@@ -154,7 +154,7 @@ class ApiController extends Controller
 
         //toName
         $boxToname = new Box($im);
-        $boxToname->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic2.ttf'); 
+        $boxToname->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxToname->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxToname->setFontSize($textObj->fs);
         $boxToname->setBox(20, 20, 720, 660);
@@ -163,7 +163,7 @@ class ApiController extends Controller
 
         //toMsg1
         $boxTomsg1 = new Box($im);
-        $boxTomsg1->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic2.ttf'); 
+        $boxTomsg1->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxTomsg1->setFontSize($textObj->fs);
         $boxTomsg1->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxTomsg1->setBox(20, 20, 660, 860);
@@ -171,7 +171,7 @@ class ApiController extends Controller
         $boxTomsg1->draw($textObj->toMsg['0']);
         //toMsg2
         $boxTomsg2 = new Box($im);
-        $boxTomsg2->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic2.ttf'); 
+        $boxTomsg2->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxTomsg2->setFontSize($textObj->fs);
         $boxTomsg2->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxTomsg2->setBox(20, 20, 660, 1040);
@@ -179,7 +179,7 @@ class ApiController extends Controller
         $boxTomsg2->draw($textObj->toMsg['1']);
         //toMsg3
         $boxTomsg3 = new Box($im);
-        $boxTomsg3->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic2.ttf'); 
+        $boxTomsg3->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxTomsg3->setFontSize($textObj->fs);
         $boxTomsg3->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxTomsg3->setBox(20, 20, 660, 1230);
@@ -188,7 +188,7 @@ class ApiController extends Controller
 
         //fromName
         $boxFromname = new Box($im);
-        $boxFromname->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic2.ttf'); 
+        $boxFromname->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxFromname->setFontSize($textObj->fs);
         $boxFromname->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxFromname->setBox(20, 20, 510, 880);
