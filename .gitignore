@@ -3,7 +3,6 @@
 .git
 .vagrant
 *.sql
-puppet/
 node_modules/
 build/src/
 build/dist/media/
@@ -14,7 +13,6 @@ upload/
 .idea
 #*.mp4
 #build/
-Vagrantfile
 package-lock.json
 package.json
 pic/created/*
