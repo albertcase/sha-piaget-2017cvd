@@ -168,7 +168,7 @@ class ApiController extends Controller
         $boxTomsg1->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxTomsg1->setBox(20, 20, 660, 860);
         $boxTomsg1->setTextAlign('center', 'center');
-        $boxTomsg1->draw($textObj->toMsg['0']);
+        $boxTomsg1->draw($this->convertStr($textObj->toMsg['0']));
         //toMsg2
         $boxTomsg2 = new Box($im);
         $boxTomsg2->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
@@ -176,7 +176,7 @@ class ApiController extends Controller
         $boxTomsg2->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxTomsg2->setBox(20, 20, 660, 1040);
         $boxTomsg2->setTextAlign('center', 'center');
-        $boxTomsg2->draw($textObj->toMsg['1']);
+        $boxTomsg2->draw($this->convertStr($textObj->toMsg['1']));
         //toMsg3
         $boxTomsg3 = new Box($im);
         $boxTomsg3->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
@@ -184,7 +184,7 @@ class ApiController extends Controller
         $boxTomsg3->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxTomsg3->setBox(20, 20, 660, 1230);
         $boxTomsg3->setTextAlign('center', 'center');
-        $boxTomsg3->draw($textObj->toMsg['2']);
+        $boxTomsg3->draw($this->convertStr($textObj->toMsg['2']));
 
         //fromName
         $boxFromname = new Box($im);
@@ -193,7 +193,7 @@ class ApiController extends Controller
         $boxFromname->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
         $boxFromname->setBox(20, 20, 510, 880);
         $boxFromname->setTextAlign('right', 'bottom');
-        $boxFromname->draw($textObj->fromName);
+        $boxFromname->draw($this->convertStr($textObj->fromName));
         $name = $this->create_uuid();
         $fileName = './upload/' . $name . '.jpg';
         imagejpeg($im, $fileName);
@@ -205,7 +205,8 @@ class ApiController extends Controller
      */
     private function convertStr($str)
     {
-        return mb_convert_encoding($str, "utf-8");
+        return preg_replace('# #', '', $str);
+        // return mb_convert_encoding($str, "utf-8");
         // return iconv("GBK","UTF-8",$str);
     }
 
