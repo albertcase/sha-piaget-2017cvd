@@ -189,9 +189,9 @@ class ApiController extends Controller
         //fromName
         $boxFromname = new Box($im);
         $boxFromname->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
-        $boxFromname->setFontSize($textObj->fs);
+        $boxFromname->setFontSize($textObj->fs+3);
         $boxFromname->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
-        $boxFromname->setBox(20, 20, 510, 880);
+        $boxFromname->setBox(20, 20, 500, 880);
         $boxFromname->setTextAlign('right', 'bottom');
         $boxFromname->draw($this->convertStr($textObj->fromName));
         $name = $this->create_uuid();
