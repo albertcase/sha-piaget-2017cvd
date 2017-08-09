@@ -21,9 +21,8 @@
     <meta name="Description" content="...">
     
     <link rel="stylesheet" type="text/css" href="/build/dist/css/main.min.css">
-    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script type="text/javascript" src="/build/dist/js/vendor.min.js"></script>
-    <script type="text/javascript" src="http://piaget2017cvd.samesamechina.com/wechat/jssdk/config/js"></script>
+    <script type="text/javascript" src="/wechat/jssdk/config/js"></script>
 
     <script type="text/javascript" src="/build/dist/js/base.min.js"></script>
 </head>
