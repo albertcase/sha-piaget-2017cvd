@@ -156,7 +156,7 @@ class ApiController extends Controller
         $boxToname = new Box($im);
         $boxToname->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxToname->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
-        $boxToname->setFontSize($textObj->fs);
+        $boxToname->setFontSize($textObj->fs+3);
         $boxToname->setBox(20, 20, 720, 660);
         $boxToname->setTextAlign('center', 'center');
         $boxToname->draw($this->convertStr($textObj->toName));
@@ -166,7 +166,7 @@ class ApiController extends Controller
         $boxTomsg1->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxTomsg1->setFontSize($textObj->fs);
         $boxTomsg1->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
-        $boxTomsg1->setBox(20, 20, 660, 860);
+        $boxTomsg1->setBox(20, 20, 720, 860);
         $boxTomsg1->setTextAlign('center', 'center');
         $boxTomsg1->draw($this->convertStr($textObj->toMsg['0']));
         //toMsg2
@@ -174,7 +174,7 @@ class ApiController extends Controller
         $boxTomsg2->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxTomsg2->setFontSize($textObj->fs);
         $boxTomsg2->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
-        $boxTomsg2->setBox(20, 20, 660, 1040);
+        $boxTomsg2->setBox(20, 20, 720, 1040);
         $boxTomsg2->setTextAlign('center', 'center');
         $boxTomsg2->draw($this->convertStr($textObj->toMsg['1']));
         //toMsg3
@@ -182,7 +182,7 @@ class ApiController extends Controller
         $boxTomsg3->setFontFace($_SERVER['DOCUMENT_ROOT'] . '/font/pic3.otf'); 
         $boxTomsg3->setFontSize($textObj->fs);
         $boxTomsg3->setFontColor(new Color($textObj->color['0'], $textObj->color['1'], $textObj->color['2']));
-        $boxTomsg3->setBox(20, 20, 660, 1230);
+        $boxTomsg3->setBox(20, 20, 720, 1230);
         $boxTomsg3->setTextAlign('center', 'center');
         $boxTomsg3->draw($this->convertStr($textObj->toMsg['2']));
 
