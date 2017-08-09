@@ -25,23 +25,30 @@
     <script type="text/javascript" src="/wechat/jssdk/config/js"></script>
 
     <script type="text/javascript" src="/build/dist/js/base.min.js"></script>
+    <style type="text/css">
+        #zuopin{
+            position: relative;
+        }
+    
+        #dreambox, #dreambox.inside{
+            background: none;
+        }
+    </style>
 </head>
 <body>
 
 
 <div id="dreambox">
-
-
     <div class="section" id="works">
-        <div id="zuopin"><img src="<?php echo $list['pic'];?>" width="100%" /></div>
-        
-        <div class="foot">
-            <span class="btn">
-                <a href="/" class="friend-btn"></a>
-                <img src="/build/dist/img/friend-btn.png" width="100%" />
-            </span>
-        </div>
-
+        <div id="zuopin">
+            <img src="<?php echo $list['pic'];?>" width="100%" />
+            <div class="foot">
+                <span class="btn">
+                    <a href="/" class="friend-btn"></a>
+                    <img src="/build/dist/img/friend-btn.png" width="100%" />
+                </span>
+            </div>
+        </div>   
     </div>
     
 <!-- 横屏代码 -->
