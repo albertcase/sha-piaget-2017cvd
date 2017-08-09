@@ -13,5 +13,4 @@ $routers['/api/createPic'] = array('CampaignBundle\Api', 'createPic');
 $routers['/api/submit'] = array('CampaignBundle\Api', 'submit');
 $routers['/api/checkSubmit'] = array('CampaignBundle\Api', 'checkSubmit');
 $routers['/sharePic'] = array('CampaignBundle\Page', 'sharePic');
-$routers['/login'] = array('CampaignBundle\Page', 'login');
 $routers['/test'] = array('CampaignBundle\Api', 'test');
