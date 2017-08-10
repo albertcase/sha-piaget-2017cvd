@@ -209,9 +209,9 @@ class ApiController extends Controller
      */
     private function convertStr($str)
     {
-        return preg_replace('# #', '', $str);
+        // return preg_replace('# #', '', $str);
         // return mb_convert_encoding($str, "utf-8");
-        // return iconv("GBK","UTF-8",$str);
+        return iconv("gb2312","UTF-8",$str);
     }
 
     /**
