@@ -178,7 +178,7 @@ class ApiController extends Controller
         $boxTomsg2->setTextAlign('center', 'center');
         $boxTomsg2->draw($this->convertStr($textObj->toMsg['1']));
         //toMsg3
-        $len = strlen($textObj->toMsg['2']);
+        $len = mb_strlen($textObj->toMsg['2']);
         if($len >15) {
             $textObj->toMsg['2'] = substr($textObj->toMsg['2'], 0, 15-$len);
         }
