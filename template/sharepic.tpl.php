@@ -22,7 +22,7 @@
     
     <link rel="stylesheet" type="text/css" href="/build/dist/css/main.min.css">
     <script type="text/javascript" src="/build/dist/js/vendor.min.js"></script>
-    <script type="text/javascript" src="/wechat/jssdk/config/js"></script>
+    <script type="text/javascript" src="/wechat/jssdk/config"></script>
 
     <script type="text/javascript" src="/build/dist/js/base.min.js"></script>
     <style type="text/css">
