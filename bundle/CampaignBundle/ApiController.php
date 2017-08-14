@@ -210,8 +210,9 @@ class ApiController extends Controller
     private function convertStr($str)
     {
         // $str = preg_replace('# #', " ", $str);
+        //去掉苹果手机中文输入法半个空格乱码的问题
+        $str = str_replace('\u0026', '', $str);
         return mb_convert_encoding($str, "utf-8");
-        // return iconv("gb2312","UTF-8",$str);
     }
 
     /**
