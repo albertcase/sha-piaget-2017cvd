@@ -27,6 +27,17 @@
     </script>
 
     <script type="text/javascript" src="/build/dist/js/base.min.js"></script>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?0bc1bde1ec10a60a065cdad3ad844f3d";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
     <style type="text/css">
         #zuopin{
             position: relative;
@@ -46,7 +57,7 @@
             <img src="<?php echo $list['pic'];?>" width="100%" />
             <div class="foot">
                 <span class="btn">
-                    <a href="/" class="friend-btn"></a>
+                    <a href="/" class="friend-btn" onclick="_hmt.push(['_trackEvent', 'buttons', 'click', '我也要告白']);"></a>
                     <img src="/build/dist/img/friend-btn.png" width="100%" />
                 </span>
             </div>
@@ -63,6 +74,13 @@
 
 
 <script type="text/javascript">
+
+    shareSet['_shareAppMessageCallback'] = function(){
+        _hmt.push(['_trackEvent', 'buttons', 'share', 'onMenuShareAppMessage(好友页面)']);
+    };
+    shareSet['_shareTimelineCallback'] = function(){
+        _hmt.push(['_trackEvent', 'buttons', 'share', 'onMenuShareTimeline(好友页面)']);
+    }
 	// 分享默认设置
 	__base.baseInit();
     __base.sectionChange("works");
