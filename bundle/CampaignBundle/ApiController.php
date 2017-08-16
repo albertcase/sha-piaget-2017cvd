@@ -200,7 +200,7 @@ class ApiController extends Controller
         $boxFromname->draw($this->convertStr($textObj->fromName));
         $name = $this->create_uuid();
         $fileName = './upload/' . $name . '.jpg';
-        imagejpeg($im, $fileName);
+        imagejpeg($im, $fileName, 95);
         return 'upload/' . $name . '.jpg';
     }
 
