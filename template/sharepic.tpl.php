@@ -74,15 +74,23 @@
 
 
 <script type="text/javascript">
-
-    shareSet['_shareAppMessageCallback'] = function(){
-        _hmt.push(['_trackEvent', 'buttons', 'share', 'onMenuShareAppMessage(好友页面)']);
-    };
-    shareSet['_shareTimelineCallback'] = function(){
-        _hmt.push(['_trackEvent', 'buttons', 'share', 'onMenuShareTimeline(好友页面)']);
+    var shareSet = {
+        "_title": '因为你，所以爱', //分享标题
+        "_desc": "大胆向TA告白，为TA获取来自伯爵的惊喜！",    // 分享朋友圈的描述
+        "_desc_friend": "大胆向TA告白，为TA获取来自伯爵的惊喜！",    // 分享好友的描述
+        "_link": window.location.origin,    //分享的连接
+        "_imgUrl": window.location.origin + "/build/dist/img/share.jpg",   //分享的图片
+        "_shareAppMessageCallback": function(){
+            _hmt.push(['_trackEvent', 'buttons', 'share', 'onMenuShareAppMessage(好友页面)']);
+        },
+        "_shareTimelineCallback": function(){
+            _hmt.push(['_trackEvent', 'buttons', 'share', 'onMenuShareTimeline(好友页面)']);
+        }
+        //"_url": encodeURIComponent(window.location.href)//encodeURIComponent(window.location.href.split("#")[0]) //.replace('http%3A%2F%2F','')
     }
+
 	// 分享默认设置
-	__base.baseInit();
+	__base.baseInit(shareSet);
     __base.sectionChange("works");
 </script>
 
