@@ -6,4 +6,68 @@
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
-    </script></head><body></body></html>
+    </script><style type="text/css">
+        .lt, .lb, .rt, .rb{
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+        .lt{
+            background: url('/build/dist/img/compatible/bg-flower-lt.png') left top no-repeat;
+            background-size: 70% auto;
+            left: 0;
+        }
+        .lb{
+            background: url('/build/dist/img/compatible/bg-flower-lb.png') left bottom no-repeat;
+            background-size: 32% auto;
+            left: 0;
+        }
+
+        .rt{
+            background: url('/build/dist/img/compatible/bg-flower-rt.png') right top no-repeat;
+            background-size: 56% auto;
+            right: 0;
+        }
+        .rb{
+            background: url('/build/dist/img/compatible/bg-flower-rb.png') right bottom no-repeat;
+            background-size: 36% auto;
+            right: 0;
+        }
+
+
+        .compatible{
+            width: 100%;
+            height: 100%;
+            background: #ab004d url('/build/dist/img/compatible/pc-content.png') center no-repeat;
+            background-size: auto 80%;
+        }
+
+        @media (max-width: 700px) {
+            .compatible{
+                width: 100%;
+                height: 100%;
+                background: #ab004d url('/build/dist/img/compatible/bg-content__phone.png') center no-repeat;
+                background-size: auto 80%;
+            }
+
+
+            .lt, .lb, .rt, .rb{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+            }
+
+            .lt{
+                background: url('/build/dist/img/inside-head__bg.png') center top no-repeat;
+                background-size: 100% auto;
+            }
+            .rb{
+                background: url('/build/dist/img/inside-foot__bg.png') center bottom no-repeat;
+                background-size: 100% auto;
+            }
+
+
+        }
+    </style></head><body><div class="compatible"><div class="lt"></div><div class="lb"></div><div class="rt"></div><div class="rb"></div></div></body></html>
