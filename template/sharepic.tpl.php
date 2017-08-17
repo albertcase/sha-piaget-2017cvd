@@ -76,8 +76,8 @@
 <script type="text/javascript">
     var shareSet = {
         "_title": '因为你，所以爱', //分享标题
-        "_desc": "大胆向TA告白，为TA获取来自伯爵的惊喜！",    // 分享朋友圈的描述
-        "_desc_friend": "大胆向TA告白，为TA获取来自伯爵的惊喜！",    // 分享好友的描述
+        "_desc": "大胆向TA告白，为TA获取来自伯爵的惊喜",    // 分享朋友圈的描述
+        "_desc_friend": "七夕告白不要怂，要从心",    // 分享好友的描述
         "_link": window.location.origin,    //分享的连接
         "_imgUrl": window.location.origin + "/build/dist/img/share.jpg",   //分享的图片
         "_shareAppMessageCallback": function(){
