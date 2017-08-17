@@ -11,7 +11,7 @@ class EventListener
 
 	public function initUser(Event $event)
 	{
-		if(preg_match('/MicroMessenger/i', $_SERVER['HTTP_USER_AGENT'])) {
+		if(!preg_match('/MicroMessenger/i', $_SERVER['HTTP_USER_AGENT'])) {
 			Header('Location:' . 'http://piaget2017cvd.samesamechina.com/compatible.html');
 			exit;
 		}
